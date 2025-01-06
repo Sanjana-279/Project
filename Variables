@@ -1,0 +1,15 @@
+Java script has 3 types of scope:
+global scope: Declared outside the function and is accessible within the function. 
+local scope also known as script scope: Declared outside the function it cannot be accessed within the function.
+block scope : declared within {}.
+
+Variables are divide into 3 types:
+var- global scope
+let      local scope
+const local scope
+
+
+Re-assigning is possible only by var and let and is not possible for const.
+Redeclaration with let and const  is not accepted. It leads to uncalled syntax error.
+Redeclaration with var is accepted.
+
