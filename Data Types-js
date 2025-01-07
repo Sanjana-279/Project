@@ -1,0 +1,47 @@
+Data Types:
+Java Script is dynamic language so there is no need to mention data type before declaring variables.
+Two types:
+1)	Primitive Data type: Predefined and stores only single values.
+•	Number: Integer, Floats.
+•	String: Stream of characters enclosed in quotes.
+-single, double, backtick.
+Backtick is introduced ES6 version.
+•	Boolean : true , false.
+•	Null: empty value or no value.
+•	Undefined:  declared variable with no value
+2)	Non-Primitive Data type: Objects ,Arrays.
+To check the datatype we us – typeOf operator.
+
+Condition: An expression that evaluates the result(true or false)
+Console.log(5>4)
+Conditional Statements:
+To execute a block of code only when the condition is true.
+
+
+Practical implementation:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<script>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //let a =1 
+        //console.log("hi +a+a")
+        //document.write(`hi+ a+a`, "<br>")
+        //document.write(`hi+ ${a+a}`)
+        //console.log(`hi +${a+a}`)
+
+         let a ="sai"
+         let b ="kumar"
+         let age = 30
+         console.log(`I am ${a+" "+ b},my age is ${age} is years old`)
+         document.write(`I am ${a+" " + b},my age is ${age} is years old`)
+        
+
+
+    </script>
+</body>
+</html> 
