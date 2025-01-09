@@ -1,0 +1,65 @@
+Block of Code: set of instructions.
+It will execute only when that specific condition is true.
+Condition: An expression that evaluates the result(true or false)
+Console.log(5>4)
+Methods:
+If :only one possible condition.
+If the condition is true it will execute other wise it will skip.
+Syntax:
+If(condition){//Block of code}
+Else if
+Else
+Switch
+Ternary Operator
+
+Practical Implementation:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        age = prompt("enter your age?")
+        name = prompt("enter your name?")
+        if(age<18){
+            alert(name+" you are too young to marry")
+        }else if(age>35){
+            alert(name+" you are too old to marry")
+        }else{
+            alert(name+" perfect age to marry")
+        }
+        alert("welcome to hyderabad")
+        //let a =5;
+        //let b =10;
+        //if(a>b){
+          //  document.write("hi sanjana ","<br>")
+        //}else{
+          //  document.write(" hi manvitha","<br>")
+        //}
+        //document.write("welcome to hyderabad")
+        </script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let scoreA= parseInt(prompt("Score of A?"))
+        let scoreB= parseInt(prompt("Score of B?"))
+        if((scoreA>300 || scoreB>300) && scoreA + scoreB < 500 ){
+            alert("Can team up")
+        }else{
+            alert("Cannot team up")
+        }
+    </script>
+</body>
+</html>
