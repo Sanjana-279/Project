@@ -1,0 +1,64 @@
+Loops: Allows us to execute code several times.
+for loop.
+for in loop.
+for of loop.
+while loop.
+do while loop.
+
+For loop: (initialization; condition; update){ // Block of code}.
+Initialization: A place where loop starts.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       // for(let i =1;i<=5;i++){
+       //   document.write(i,"<br>")
+       //}
+       // for(let i =0;i<7;i=i+2){
+         //   document.write(i+2,"<br>")
+        //}
+    </script>
+
+    <!-- <script>
+        for(let i =10;i<=15;i++){
+            document.write(i,"<br>")
+        }
+    </script> -->
+
+    <!-- <script>
+        for(let i =1;i<=5;i++){
+            document.write('sanjana',"<br>")
+        }
+    </script> -->
+
+    <!-- <script>
+        for(let i =1;i<=10;i++){
+            document.write(i*i,"<br>")
+        }
+    </script> -->
+
+
+     <script>
+        let a = 9;
+        for(let i =1;i<=10;i++){
+            document.write(a +' x ' + i + ' = ' + a*i ,"<br>")
+        }
+    </script>
+</body>
+</html>
+
+Arrays:
+ <script>
+        const numbers =[1,2,3,4,5]
+        let sum =0
+        for(let i =0;i<numbers.length;i++){
+            sum = sum+numbers[i]
+            document.write(sum,"<br>")
+        }
+    </script>
