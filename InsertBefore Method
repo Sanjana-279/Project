@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="a">
+        <h1 id="r">Ravi</h1>
+        <h1>Ram</h1>
+    </div>
+    <div id="b">
+        <h1>Rishi</h1>
+        <h1>Revanth</h1>
+    </div>
+    <script>
+    let  n= document.createElement("h2")
+    n.textContent = "Sanjana";
+    /*let p = document.getElementById("a")
+    let l = document.getElementById("r")
+    console.log(l)
+    n.removeChild(l)*/
+    p.insertBefore(n,l)
+    console.log(p) 
+    </script>
+     <script>
+        let n = document.createElement("h1")
+        n.textContent="version-it"
+        let p = document.getElementById("a")
+        p.replaceChildren(n)
+        console.log(p)
+    </script>
+</body>
+</html>
