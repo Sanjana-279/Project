@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <script>
+        let age = prompt("enter your age?")
+        let citizen = prompt("Are you a citizen?(yes or no)")
+        let citizenshiptest = prompt("Did you pass the citizenship test?")
+        if(age>=18 && (citizen=="yes" ||(citizen =="no" && citizenshiptest=="yes"))){
+            document.write("You are eligible to vote")
+        }else{
+            document.write("Not eligible to vote")
+        }
+    </script> -->
+
+    <script>
+        let expenses;
+        let premium;
+        let discount=0;
+        expenses=prompt("enter the amount")
+        premium=prompt("is premium member? (yes or no)")
+        if(parseInt(expenses)>100){
+            discount=expenses*(0.20);
+        }
+        else if(parseInt(expenses)>50|| parseInt(expenses)<=100){
+            discount=expenses*(0.10);
+        }
+        else if(premium=="yes"){
+            discount=expenses*(0.05);
+        }
+        let finalAmount =(expenses - discount);
+        document.write("Final amount after discount: " + finalAmount);
+    </script>
+
+    <!-- <script>
+        let user = prompt("Are you a VIP member?")
+        let sp = prompt("Do you have special invitation?")
+        let age =prompt("Enter your age?");
+        if(user == "yes"){
+            document.write("You can attend all events")
+        }else if(user="no" && sp=="yes"){
+            document.write("You can attend only specific events ")
+        }else if(age<18){
+            document.write("You cannot attend events")
+        }else{
+            document.write("Inavlid user")
+        }
+    </script> -->
+</body>
+</html>
