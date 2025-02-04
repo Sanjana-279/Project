@@ -1,0 +1,47 @@
+
+React Js:
+•	It is a java script library. 
+•	Single Page application.
+•	All are divided into components.
+To create:
+<h1>sai</h1>
+Document.createElement(‘h1’)
+To create a element by react js:
+React.createElement(‘h1’)
+Syntax:
+React.createElement(type,prop)
+-type = tag name(div ,h1, p)
+Props = className , id , onClick
+To display the element
+ReactDOM.createRoot()
+ReactDOM.render() – to display the element.
+
+Intro to JSX:
+(Javascript XML) is a syntax extension for js , in react js , it allows us to write html code in react.
+JSX code gets compiled into JS 
+Babel: a tool converts translates into js.
+
+<div id = "app"></div>
+
+        <script>
+
+         const element =React.createElement(‘h1’, {className:"a"},Hello JSX)</h1>
+
+         const root=ReactDOM.createRoot(document.getElementById('app'))
+
+         root.render(element)
+
+        </script>
+
+<body>
+  <div id = "app"></div>
+    <script type="text/babel">
+        function getGreeting(name){
+            return `Hello, ${name} ! Welcome to React`
+        }
+        function Greeting(){
+            const name ="Sanjana"
+            return <h1>{getGreeting(name)} </h1>
+        }
+    </script>
+</body>
