@@ -1,0 +1,45 @@
+Public/index.html: the main html file that serves as the entry point for the app.
+Src/index.js: The java script entry point for the react app where the DOM is rendered.
+Src/App.js: The main component that serves as the root of the component tree.
+Src/components: A folder to store reusable components.
+Components: core building blocks of react application.
+they help to create reusable block of code.
+Components:
+1)	Class components
+2)	Functional components
+
+Welcome.js
+import React from "react";
+
+const Welcome=(props)=>{
+    const {name,greeting}=props;
+    return (
+        <h1 className="messsage">{greeting},{name}</h1>
+    )
+}
+export default Welcome;
+
+App.js
+import React from 'react';
+import Welcome from "./Components/Welcome";
+import  './App.css'
+//const Welcome=()=><h1 className='message'>Hello Everyone!</h1>
+const App=()=>{
+  return(
+    <div style= {{textAlign:'center' , color:'red'}} >
+      <Welcome name="Sanjana" greeting ="Hello"/>
+      <Welcome name="Varsha" greeting ="Hello"/>
+    </div>
+  )
+}
+export default App;
+
+App.css
+.message{
+  color:red;
+  background-color: yellow;
+  font-size:40px;
+  text-align: center;
+  width:30%;
+  margin-left: 30%;
+}
