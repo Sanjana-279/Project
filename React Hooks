@@ -1,0 +1,37 @@
+React Hooks:
+--Introduced on react 16.8 version.
+--to manage state and life cycle features in functional components.
+State: is an essential part in react because it allows components to be dynamic, interactive and capable of responding to user input or change.
+1)	useStateHook: allows you to add state to functional components.
+Syntax:  const[state,setState] = useState(intial value).
+State: This is current state.
+setState: This is a function to update the state.
+Intial value: The value you want to set as the initial value.
+import React,{useState} from 'react';
+import './App.css';
+const Counter=()=>{
+  const[count,setCount] = useState(0);
+  return(
+    <div>
+      <h1>{count}</h1>
+      <button className="app" onClick={()=>setCount(count+1)}>Increment</button>
+      <button className='abc' onClick={()=>setCount(count-1)}>Decrement</button>
+    </div>
+  );
+};
+export default Counter;
+
+import React,{useState} from "react";
+const ThemeToggler=()=>{
+  const[theme,setTheme]=useState("light");
+  const toggleTheme = ()=>{
+    setTheme(prevTheme=>(prevTheme='light'?'dark':'light'))
+  }
+  return(
+    <div style={{backgroundColor:theme==='light'?'white':'black',color:theme ==='light'?'black':'white'}}>
+      <h1>The Current Theme is {theme}</h1>
+      <button onClick={toggleTheme}>toggleTheme</button>
+    </div>
+  )
+}
+export default ThemeToggler;
