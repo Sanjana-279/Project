@@ -1,0 +1,36 @@
+import React from "react";
+let name = prompt("enter the name?")
+function Greet({isLoggedIn}){
+    if(isLoggedIn){
+        return <h1>Welcome back {name}</h1>
+    }else{
+        return <h1>Please Log in {name}</h1>
+    }
+}
+export default Greet;
+
+import React,{useState}from "react";
+const products=[
+  {id:1,name:"Laptop",category:"Electronics"},
+  {id:2,name:"Headphones",category:"Electronics"},
+  {id:3,name:"Mobile Phone",category:"Electronics"},
+  {id:4,name:"Fridge",category:"Electronics"},
+  {id:5,name:"Computer",category:"Electronics"}
+]
+function ProductSearch(){
+  const[searchQuery,setSearchQuery]=useState("");
+}
+const filterProducts(query)=>{
+  return products.filter(product=>
+    product.name.toLowerCase().includes(query.toLowerCase)
+  )
+}
+return(
+  <div>
+    <h1>Products Search</h1>
+    <input type="text"
+    value={searchQuery}
+    placeholder="Search for Products"
+    onChange={}></input>
+  </div>
+)
